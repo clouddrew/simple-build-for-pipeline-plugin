@@ -1,5 +1,5 @@
  node ('faux'){
-  stage 'Build and Test' {
+  stage ('Build and Test') {
 
 simpleBuild {
  
