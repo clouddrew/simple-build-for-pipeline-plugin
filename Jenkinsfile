@@ -1,3 +1,6 @@
+ node ('faux'){
+  stage 'Build and Test' {
+
 simpleBuild {
  
     env = [
@@ -16,3 +19,4 @@ simpleBuild {
     
     
 }
+}}
