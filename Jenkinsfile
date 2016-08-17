@@ -19,4 +19,8 @@ simpleBuild {
     
     
 }
+
+triggerRemoteJob mode: [$class: 'AwaitResult', timeout: [timeoutStr: '1d'], whenFailure: [$class: 'StopAsFailure'], whenTimeout: [$class: 'ContinueAsFailure'], whenUnstable: [$class: 'ContinueAsUnstable']], remotePathMissing: [$class: 'ContinueAsIs'], remotePathUrl: 'jenkins://d9579bb5698e59da9ff613a977724631/bfolder/goodjob'
+
+
 }
